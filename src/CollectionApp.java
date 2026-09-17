@@ -12,6 +12,7 @@ public class CollectionApp {
         clc.add("Prayoga");
         clc.addAll(List.of("Programmer", "Java", "abcdefg", "hijk", "lmn", "opq"));
 
+        //--MENGHAPUS ELEMEN
         clc.remove("abcdefg");
         clc.removeAll(List.of("hijk", "lmn", "opq"));
 
@@ -20,5 +21,18 @@ public class CollectionApp {
         while (itr.hasNext()){
             System.out.println(itr.next());
         }
+
+        //---MENGECEK APA ADA ELEMEN YANG DIMAKSUD, return val : boolean
+        System.out.println(clc.contains("Teguh")); //True
+        System.out.println(clc.containsAll(List.of("Programmer", "Zaman", "Now"))); //FALSE
+
+        //---NGASIH TAU JUMLAH ELEMEN
+        System.out.println(clc.size());
+
+        //---CEK APA KOSONG ATAU ADA ELEMEN
+        System.out.println(clc.isEmpty()); //FALSE
+
+        Collection<Integer> clc2 = new ArrayList<>();
+        System.out.println(clc2.isEmpty()); //TRUE
     }
 }
