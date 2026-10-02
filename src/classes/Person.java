@@ -26,4 +26,11 @@ public class Person {
     public String getName() {
         return name;
     }
+
+    //Ini adalah toString, menjadikan isi object bisa dicetak
+    @Override
+    public String toString() {
+//        return "Person {name = '" + name + "'}";
+        return name;
+    }
 }
